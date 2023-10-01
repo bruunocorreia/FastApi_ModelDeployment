@@ -8,6 +8,9 @@ import pickle
 from app.model import DataModeler
 from pathlib import Path
 
+#print
+print("test")
+
 #We use to save the version of our software
 __version__ = "0.1.0"
 

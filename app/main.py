@@ -8,7 +8,7 @@ import pickle
 from app.model import DataModeler
 from pathlib import Path
 
-#We use to save the version of our software
+#We use to save the version of our softwar
 __version__ = "0.1.0"
 
 #Read pickle model

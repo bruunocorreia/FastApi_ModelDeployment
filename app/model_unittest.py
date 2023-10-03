@@ -8,6 +8,7 @@ import numpy as np
 import pickle
 from model import DataModeler
 from pathlib import Path
+import os
 
 #Class herda uma classe de teste unitário
 class TestDataModeler(unittest.TestCase):
@@ -41,7 +42,12 @@ class TestDataModeler(unittest.TestCase):
         ))
         
         #Read pickle model
-        with open("transact_modeler", "rb") as f:
+        # Get the directory path where this script is located
+        script_directory = Path(__file__).parent
+
+        # Now you can create the relative path to your pickle model file
+        pickle_model_path = script_directory / "transact_modeler"
+        with open(pickle_model_path, "rb") as f:
             self.model = pickle.load(f)
 
     def test_prepare_data(self):

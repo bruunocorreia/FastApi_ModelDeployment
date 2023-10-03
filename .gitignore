@@ -1,0 +1,8 @@
+# Ignore Jupyter Notebook files
+*.ipynb
+
+# Byte-compiled / optimized files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

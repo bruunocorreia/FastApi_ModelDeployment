@@ -11,8 +11,14 @@ from pathlib import Path
 #We use to save the version of our softwar
 __version__ = "0.1.0"
 
+# Get the directory path where this script is located
+script_directory = Path(__file__).parent
+
+# Now you can create the relative path to your pickle model file
+pickle_model_path = script_directory / "transact_modeler"
+
 #Read pickle model
-with open("transact_modeler", "rb") as f:
+with open(pickle_model_path, "rb") as f:
     model = pickle.load(f)
 
 # Initialize the DataModelerwith training data

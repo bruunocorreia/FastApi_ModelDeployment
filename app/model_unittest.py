@@ -41,7 +41,7 @@ class TestDataModeler(unittest.TestCase):
         ))
         
         #Read pickle model
-        with open("transact_modeler", "rb") as f:
+        with open("app\transact_modeler", "rb") as f:
             self.model = pickle.load(f)
 
     def test_prepare_data(self):

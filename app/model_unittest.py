@@ -6,7 +6,7 @@ from pydantic import BaseModel
 import pandas as pd
 import numpy as np
 import pickle
-from app.model import DataModeler
+from model import DataModeler
 from pathlib import Path
 
 #Class herda uma classe de teste unitário

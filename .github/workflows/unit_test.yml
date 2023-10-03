@@ -21,4 +21,4 @@ jobs:
         python - m pip install -r requeriments.txt  # Certifique-se de ter um arquivo requirements.txt com as dependências necessárias
 
     - name: Run Unit Tests
-      run: python model_unittest.py
+      run: python app/model_unittest.py

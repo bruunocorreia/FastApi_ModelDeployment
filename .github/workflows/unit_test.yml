@@ -18,9 +18,7 @@ jobs:
     - name: Install dependencies
       run: 
         python -m pip install --upgrade pip
-        pip install virtualenv
-        python -m virtualenv venv
-        source venv/bin/activate
         python - m pip install -r requeriments.txt
+        pip install fastapi
     - name: Run Unit Tests
       run: python app/model_unittest.py

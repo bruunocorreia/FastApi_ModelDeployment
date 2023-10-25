@@ -9,7 +9,7 @@ class DataModeler:
         '''
         Initialize the DataModeler as necessary.
         '''
-        # ** Your code here **
+        
         self.train_df = sample_df.copy()
         self.model = None
         
@@ -18,7 +18,7 @@ class DataModeler:
         Prepare a dataframe so it contains only the columns to model and having suitable types.
         If the argument is None, work on the training data passed in the constructor.
         '''
-        # ** Your code here **
+        
         if oos_df is None:
             df = self.train_df.copy()
         else:
@@ -50,7 +50,7 @@ class DataModeler:
         If the argument is None, work on the training data passed in the constructor.
         Hint: Watch out for data leakage in your solution.
         '''
-        # ** Your code here **
+        
         if oos_df is None:
             df = self.train_df.copy()
         else:
@@ -75,9 +75,9 @@ class DataModeler:
         Fit the model of your choice on the training data paased in the constructor, assuming it has
         been prepared by the functions prepare_data and impute_missing
         '''
-        # ** Your code here **
+        
         # Choose a model
-        # ** Your code here **
+        
         
         # Apply imputation of missing values
         train_df= self.impute_missing(self.train_df.copy())
@@ -91,7 +91,7 @@ class DataModeler:
         Create a short summary of the model you have fit.
         '''
         
-        # ** Your code here **
+        
         if self.model is None:
             return "Model has not been trained yet."
 
@@ -130,7 +130,7 @@ class DataModeler:
         '''
         Save the DataModeler so it can be re-used.
         '''
-        # ** Your code here **
+        
         # Salvar o modelo, se necessário
         
         with open(path, "wb") as f:
@@ -141,7 +141,7 @@ class DataModeler:
         '''
         Reload the DataModeler from the saved state so it can be re-used.
         '''
-        # ** Your code here **
+        
         # Carregar um modelo previamente salvo, se necessário
 
         with open(path, "rb") as f:
